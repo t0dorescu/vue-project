@@ -1,18 +1,37 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+const msg = ref("You did it");
+
+const imgAttr = {
+  alt: "Vue logo",
+  class: "logo",
+  width: "125",
+  height: "125"
+};
+
+const isButtonDisabled = ref(false);
+const onButtonClick = () => (isButtonDisabled.value = true);
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
+    <img
+      v-bind="imgAttr"
+      src="./assets/logo.svg"
+    />
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <HelloWorld :msg />
     </div>
   </header>
 
   <main>
+    <div class="text-center mt-10">
+      <BaseButton
+        :disabled="isButtonDisabled"
+        @click="onButtonClick"
+      >
+        Click me!!!
+      </BaseButton>
+    </div>
     <TheWelcome />
   </main>
 </template>
