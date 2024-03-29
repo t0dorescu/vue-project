@@ -1,5 +1,13 @@
+<script setup>
+const show = ref(true);
+</script>
+
 <template>
   <AppPractice />
+  <LifecycleHooks
+    v-if="show"
+    class="mb-5"
+  />
   <FormInputBinding class="mb-5" />
   <EventHandling class="mb-5" />
   <ListRendering class="mb-5" />

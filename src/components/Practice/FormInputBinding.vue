@@ -5,6 +5,7 @@ const checked = ref(true);
 const checkedNames = ref([]);
 const pick = ref("");
 const picked = ref("");
+
 const selected = ref("");
 const selectedMultiple = ref();
 const selectedDynamic = ref("C");
@@ -16,9 +17,10 @@ const optionsDynamic = ref([
 
 const toggle = ref("");
 const toggleDynamic = ref("");
-
 const first = ref("first");
 const second = ref("second");
+const msg = ref("msg");
+const age = ref(34);
 </script>
 
 <template>
@@ -220,6 +222,22 @@ const second = ref("second");
       <!-- inline object literal -->
       <option :value="{ number: 123 }">123</option>
     </select>
+  </div>
+  <div class="vertical">
+    <!-- synced after "change" instead of "input" -->
+    <input
+      v-model.lazy="msg"
+      placeholder="Message..."
+    />
+    <input
+      v-model.trim="msg"
+      placeholder="Trimmed Message..."
+    />
+    <input
+      type="number"
+      v-model.number="age"
+      placeholder="Age..."
+    />
   </div>
 </template>
 
