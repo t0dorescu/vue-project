@@ -1,6 +1,4 @@
 <script setup>
-import { onUpdated } from "vue";
-
 onMounted(() => {
   console.log(`the component is now mounted.`);
 });

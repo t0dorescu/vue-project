@@ -41,8 +41,7 @@ const nowMethod = () => Date.now();
       <HelloWorld :msg />
     </div>
   </header>
-
-  <main>
+  <main class="mb-10">
     <div class="text-center mt-10">
       <BaseButton
         @click="onButtonClick"

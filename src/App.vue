@@ -4,10 +4,9 @@ const show = ref(true);
 
 <template>
   <AppPractice />
-  <LifecycleHooks
-    v-if="show"
-    class="mb-5"
-  />
+  <WatchEffectCommits />
+  <WatchReactivity />
+  <LifecycleHooks v-if="show" />
   <FormInputBinding class="mb-5" />
   <EventHandling class="mb-5" />
   <ListRendering class="mb-5" />
