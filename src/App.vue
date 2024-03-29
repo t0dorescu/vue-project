@@ -3,7 +3,11 @@ const show = ref(true);
 </script>
 
 <template>
+  <BlogPage />
+  <!--
   <AppPractice />
+  <RefsInsideArray />
+  <TemplateRefs />
   <WatchEffectCommits />
   <WatchReactivity />
   <LifecycleHooks v-if="show" />
@@ -15,4 +19,5 @@ const show = ref(true);
     class="p-5 border border-gray-400 rounded mb-10"
   />
   <BookPublished />
+  -->
 </template>
