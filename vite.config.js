@@ -1,6 +1,6 @@
-import { fileURLToPath, URL } from "node:url";
-import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
+import { defineConfig } from "vite";
+import { fileURLToPath, URL } from "node:url";
 import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
 
@@ -12,12 +12,12 @@ export default defineConfig({
     AutoImport({
       imports: ["vue"],
       resolvers: [],
-      dirs: ["./composables/**", "./components/**/*"],
+      dirs: ["./composables/**"],
       vueTemplate: true
     }),
     // https://github.com/antfu/vite-plugin-components
     Components({
-      dirs: ["src/components", "src/pages/**/components"],
+      dirs: ["src/components"],
       dts: "src/components.d.ts",
       resolvers: []
     })

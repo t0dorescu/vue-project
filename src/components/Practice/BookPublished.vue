@@ -1,0 +1,17 @@
+<script setup>
+const author = reactive({
+  name: "John Doe",
+  books: ["Vue 2 - Advanced Guide", "Vue 3 - Basic Guide", "Vue 4 - The Mystery"]
+});
+
+const publishedBooksMessage = computed(() => {
+  return author.books.length > 0 ? "Yes" : "No";
+});
+</script>
+
+<template>
+  <div class="text-center mb-10">
+    <p>Has published books:</p>
+    <span>{{ publishedBooksMessage }}</span>
+  </div>
+</template>
