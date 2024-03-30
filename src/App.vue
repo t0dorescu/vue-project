@@ -1,14 +1,14 @@
 <template>
-  <CellsImplementation />
-
+  <DefineModelParent />
   <!--   
+    <AppPractice />
+  <CellsImplementation />
   <ModalImplementation />
   <TreeView />
   <GridImplementation />  
   <TodoList />
   <ExampleFormBindings />
   <BlogPage />
-  <AppPractice />
   <RefsInsideArray />
   <TemplateRefs />
   <WatchEffectCommits />
