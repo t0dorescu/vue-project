@@ -3,8 +3,9 @@ const show = ref(true);
 </script>
 
 <template>
+  <component :is="'vue:blog-page'"></component>
+
   <BlogPage />
-  <!--
   <AppPractice />
   <RefsInsideArray />
   <TemplateRefs />
@@ -19,5 +20,4 @@ const show = ref(true);
     class="p-5 border border-gray-400 rounded mb-10"
   />
   <BookPublished />
-  -->
 </template>

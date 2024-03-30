@@ -14,7 +14,10 @@ const fullName = computed({
 </script>
 
 <template>
-  <div :class="$attrs.class">
+  <div
+    class="wrapper"
+    :class="$attrs.class"
+  >
     <p
       class="text-2xl my-3"
       v-if="$attrs.title"
@@ -38,3 +41,9 @@ const fullName = computed({
     </div>
   </div>
 </template>
+
+<style scoped>
+.wrapper {
+  @apply p-5 border border-gray-400 rounded mb-10;
+}
+</style>
