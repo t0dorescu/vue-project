@@ -1,7 +1,11 @@
 <template>
-  <DefineModelParent />
+  <MouseTrackerImplementation />
+
   <!--   
-    <AppPractice />
+  <FancyListImplementation />
+  <SlotImplementation />
+  <DefineModelParent />
+  <AppPractice />
   <CellsImplementation />
   <ModalImplementation />
   <TreeView />
