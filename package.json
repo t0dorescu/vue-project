@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "git-push": "git add . ; git commit -am '#' ; git push"
+    "git": "git add . ; git commit -am '#' ; git push"
   },
   "dependencies": {
     "@vueuse/core": "^10.9.0",

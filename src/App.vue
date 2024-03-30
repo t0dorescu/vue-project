@@ -1,7 +1,8 @@
 <template>
-  <MouseTrackerImplementation />
-
+  App
   <!--   
+    <LocationImplementation />
+  <MouseTrackerImplementation />
   <FancyListImplementation />
   <SlotImplementation />
   <DefineModelParent />
