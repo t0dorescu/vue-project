@@ -12,6 +12,8 @@ module.exports = {
     ecmaVersion: "latest"
   },
   rules: {
-    "vue/require-v-for-key": "off"
+    "vue/require-v-for-key": "off",
+    "vue/no-mutating-props": "off",
+    "vue/valid-v-for": "off"
   }
 };
