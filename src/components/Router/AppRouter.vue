@@ -34,12 +34,7 @@ const goNext = () => {
   </div>
   <nav class="flex gap-x-5 my-5">
     <RouterLink :to="{ name: 'home' }">Go to Home</RouterLink>
-    <RouterLink
-      to="/about"
-      replace
-    >
-      Go to About
-    </RouterLink>
+    <RouterLink to="/about">Go to About</RouterLink>
     <RouterLink to="/users/tudor">Go to Users Tudor</RouterLink>
     <RouterLink to="/users/cristina">Go to Users Cristina</RouterLink>
   </nav>
@@ -47,3 +42,12 @@ const goNext = () => {
     <RouterView />
   </main>
 </template>
+
+<style scoped>
+a {
+  @apply border rounded px-3 py-2 hover:bg-indigo-50 text-indigo-400 hover:text-indigo-600;
+}
+.router-link-active {
+  @apply border-indigo-500 text-indigo-600 bg-indigo-100 hover:bg-indigo-100;
+}
+</style>

@@ -6,7 +6,7 @@ const goToHome = () => {
 
 const route = useRoute();
 onMounted(() => {
-  console.log("route", route);
+  // console.log("route", route);
 });
 </script>
 

@@ -8,6 +8,9 @@ import UserGeneric from "@/views/User/UserGeneric.vue";
 import UserHome from "@/views/User/UserHome.vue";
 import UserProfile from "@/views/User/UserProfile.vue";
 import UserPosts from "@/views/User/UserPosts.vue";
+import UserSettings from "@/views/UserSettings/UserSettings.vue";
+import UserEmailsSubscriptions from "@/views/UserSettings/UserEmailsSubscriptions.vue";
+import UserProfilePreview from "@/views/UserSettings/UserProfilePreview.vue";
 
 const routes = [
   { path: "/", component: HomeView, name: "home" },
@@ -22,17 +25,36 @@ const routes = [
         component: UserHome
       },
       {
-        // UserProfile will be rendered inside User's <router-view>
+        // UserProfile will be rendered inside User's <RouterView>
         // when /user/:id/profile is matched
         path: "profile",
         name: "user-profile",
         component: UserProfile
       },
       {
-        // UserPosts will be rendered inside User's <router-view>
+        // UserPosts will be rendered inside User's <RouterView>
         // when /user/:id/posts is matched
         path: "posts",
         component: UserPosts
+      }
+    ]
+  },
+
+  {
+    path: "/settings",
+    // You could also have named views at the top
+    component: UserSettings,
+    children: [
+      {
+        path: "emails",
+        component: UserEmailsSubscriptions
+      },
+      {
+        path: "profile",
+        components: {
+          default: UserProfile,
+          helper: UserProfilePreview
+        }
       }
     ]
   },
@@ -56,5 +78,8 @@ const routes = [
 
 export const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    // return desired position
+  }
 });

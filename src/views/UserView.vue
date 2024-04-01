@@ -4,12 +4,12 @@ const route = useRoute();
 watch(
   () => route.params.id,
   (newId, oldId) => {
-    console.log({ newId, oldId });
+    // console.log({ newId, oldId });
   }
 );
 
 onBeforeRouteUpdate(async (to, from) => {
-  console.log({ to, from });
+  // console.log({ to, from });
   // userData.value = await fetchUser(to.params.id)
 });
 </script>
