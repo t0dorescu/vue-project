@@ -12,7 +12,7 @@ export default defineConfig({
     AutoImport({
       imports: ["vue", "@vueuse/core"],
       resolvers: [],
-      dirs: ["./composables/**"],
+      dirs: ["src/composables", "src/store"],
       vueTemplate: true
     }),
     // https://github.com/antfu/vite-plugin-components
