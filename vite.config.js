@@ -10,7 +10,7 @@ export default defineConfig({
     vue(),
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
-      imports: ["vue", "@vueuse/core"],
+      imports: ["vue", "vue-router", "@vueuse/core"],
       resolvers: [],
       dirs: ["src/composables", "src/store"],
       vueTemplate: true

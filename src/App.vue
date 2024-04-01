@@ -1,5 +1,5 @@
 <template>
-  App
+  <AppRouter />
 
   <!--   
     <LocationImplementation />
