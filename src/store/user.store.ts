@@ -1,17 +1,20 @@
 import { defineStore } from "pinia";
 
-export const useUserStore = defineStore("user", {
-  state: () => {
-    return {
-      // for initially empty lists
-      userList: [] as UserInfo[],
-      // for data that is not yet loaded
-      user: null as UserInfo | null
-    };
-  }
-});
+interface State {
+  userList: UserInfo[];
+  user: UserInfo | null;
+}
 
 interface UserInfo {
   name: string;
   age: number;
 }
+
+export const useUserStore = defineStore("user", {
+  state: (): State => {
+    return {
+      userList: [],
+      user: null
+    };
+  }
+});

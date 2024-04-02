@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 
-export const useTodos = defineStore("todos", {
+export const useTodosStore = defineStore("todos", {
   state: () => ({
     /** @type {{ text: string, id: number, isFinished: boolean }[]} */
     todos: [],
