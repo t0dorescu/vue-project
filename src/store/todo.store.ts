@@ -1,28 +1,35 @@
 import { defineStore } from "pinia";
 
+interface State {
+  todos: Todo[];
+  filter: Filter;
+  nextId: number;
+}
+
+interface Todo {
+  id: number;
+  text: string;
+  isFinished: boolean;
+}
+
+type Filter = "all" | "finished" | "unfinished";
+
 export const useTodosStore = defineStore("todos", {
-  state: () => ({
-    /** @type {{ text: string, id: number, isFinished: boolean }[]} */
-    todos: [],
-    /** @type {'all' | 'finished' | 'unfinished'} */
-    filter: "all",
-    // type will be automatically inferred to number
-    nextId: 0
-  }),
+  state: () =>
+    <State>{
+      todos: [] as Todo[],
+      filter: "all" as Filter,
+      nextId: 0 as number
+    },
   getters: {
-    finishedTodos(state) {
-      // autocompletion! ✨
+    finishedTodos(state): Todo[] {
       return state.todos.filter((todo) => todo.isFinished);
     },
-    unfinishedTodos(state) {
+    unfinishedTodos(state): Todo[] {
       return state.todos.filter((todo) => !todo.isFinished);
     },
-    /**
-     * @returns {{ text: string, id: number, isFinished: boolean }[]}
-     */
-    filteredTodos(state) {
+    filteredTodos(): Todo[] {
       if (this.filter === "finished") {
-        // call other getters with autocompletion ✨
         return this.finishedTodos;
       } else if (this.filter === "unfinished") {
         return this.unfinishedTodos;
@@ -31,10 +38,12 @@ export const useTodosStore = defineStore("todos", {
     }
   },
   actions: {
-    // any amount of arguments, return a promise or not
-    addTodo(text) {
-      // you can directly mutate the state
-      this.todos.push({ text, id: this.nextId++, isFinished: false });
+    addTodo(text): void {
+      this.todos.push(<Todo>{
+        text,
+        id: this.nextId++,
+        isFinished: false
+      });
     }
   }
 });

@@ -1,7 +1,15 @@
 <template>
-  <IsEvenExample />
+  <TodoImplementation />
 
   <!--   
+  <PropsDeclaration
+    :book="{
+      title: 'book title',
+      author: 'john',
+      year: 1923
+    }"
+  />
+  <IsEvenExample />
   <TodoImplementation />
   <AppRouter />
   <LocationImplementation />

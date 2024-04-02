@@ -10,7 +10,7 @@ count.value = 4;
 count.value = 8;
 count.value = 20;
 
-const computedObj = computed((oldValue) => {
+const computedObj = computed((oldValue: any) => {
   const newValue = {
     isEven: count.value % 2 === 0
   };
