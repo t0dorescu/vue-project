@@ -1,7 +1,7 @@
 <script setup>
 const { x, y } = useMouse();
 
-const { data } = await useFetch("https://json.schemastore.org/prettierrc");
+const { data } = useFetch("https://json.schemastore.org/prettierrc");
 const prettierData = computed(() => {
   return JSON.parse(prettierData.value);
 });

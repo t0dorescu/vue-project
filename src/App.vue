@@ -1,8 +1,9 @@
 <template>
-  <AppRouter />
+  <TodoImplementation />
 
   <!--   
-    <LocationImplementation />
+  <AppRouter />
+  <LocationImplementation />
   <MouseTrackerImplementation />
   <FancyListImplementation />
   <SlotImplementation />

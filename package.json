@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 3333 --host",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
@@ -12,7 +12,9 @@
     "git": "git add . ; git commit -am '#' ; git push"
   },
   "dependencies": {
+    "@vue/eslint-config-typescript": "^13.0.0",
     "@vueuse/core": "^10.9.0",
+    "pinia": "^2.1.7",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
