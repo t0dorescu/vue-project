@@ -1,8 +1,4 @@
 <script setup>
-// import { ref } from 'vue'
-// import { storeToRefs } from 'pinia'
-// import { useTodos } from './todos.js'
-
 const todosStore = useTodosStore();
 const { filter, filteredTodos } = storeToRefs(todosStore);
 
@@ -20,6 +16,42 @@ function addTodo() {
 function resetStore() {
   todosStore.$reset();
 }
+
+/////
+
+function patchOptions() {
+  todosStore.$patch({
+    count: store.count + 1,
+    age: 120,
+    name: "DIO"
+  });
+}
+
+function patchComposition() {
+  todosStore.$patch((state) => {
+    state.items.push({ name: "shoes", quantity: 1 });
+    state.hasChanged = true;
+  });
+}
+
+function patchState() {
+  // this doesn't actually replace `$state`
+  todosStore.$state = { count: 24 };
+  // it internally calls `$patch()`:
+  todosStore.$patch({ count: 24 });
+}
+
+todosStore.$subscribe((mutation, state) => {
+  // import { MutationType } from 'pinia'
+  mutation.type; // 'direct' | 'patch object' | 'patch function'
+  // same as cartStore.$id
+  mutation.storeId; // 'cart'
+  // only available with mutation.type === 'patch object'
+  mutation.payload; // patch object passed to cartStore.$patch()
+
+  // persist the whole state to the local storage whenever it changes
+  localStorage.setItem("cart", JSON.stringify(state));
+});
 </script>
 
 <template>

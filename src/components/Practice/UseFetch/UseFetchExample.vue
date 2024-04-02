@@ -3,7 +3,7 @@ const { x, y } = useMouse();
 
 const { data } = useFetch("https://json.schemastore.org/prettierrc");
 const prettierData = computed(() => {
-  return JSON.parse(prettierData.value);
+  return JSON.parse(data.value);
 });
 </script>
 
