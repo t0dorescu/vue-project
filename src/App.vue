@@ -1,7 +1,40 @@
 <template>
-  <NumericAnimation />
+  <DarkModeExample />
+
+  <!-- <ApplyExample /> -->
+
+  <!-- <Movies
+    :movies="[
+      {
+        id: 1
+      }
+    ]"
+  /> -->
+
+  <!-- <HoverFocusExample /> -->
+  <!-- <ResponsiveExample /> -->
+
+  <!-- 
+  <div class="tailwind-ecom-examples">
+    <EcomExample1 />
+    <EcomExample2 />
+    <EcomExample3 />
+    <EcomExample4 />
+  </div> 
+  -->
+
+  <!--
+  <div class="tailwind-simple-examples">
+    <FigureExample />
+    <SizingExample />
+    <ColorsExample />
+    <TypographyExample />
+    <ShadowsExample />
+  </div>
+  -->
 
   <!--   
+    <NumericAnimation />
     <StateDrivenAnimations />
     <ShakeAnimation />
     <TodoImplementation />
@@ -43,3 +76,9 @@
     />
   -->
 </template>
+
+<style>
+body {
+  @apply bg-gray-100 dark:bg-gray-900;
+}
+</style>

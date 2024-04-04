@@ -18,6 +18,7 @@ module.exports = {
     "vue/require-v-for-key": "off",
     "vue/no-mutating-props": "off",
     "vue/valid-v-for": "off",
+    "vue/multi-word-component-names": "off",
     "@typescript-eslint/no-unused-vars": "off",
     "no-unused-vars": "off",
     "no-undef": "off"
