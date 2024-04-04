@@ -5,7 +5,7 @@
 
 <style scoped>
 .btn {
-  @apply text-base font-medium rounded-lg py-2 px-5 mx-2;
+  @apply mx-2 rounded-lg px-5 py-2 text-base font-medium;
 }
 
 .btn--primary {

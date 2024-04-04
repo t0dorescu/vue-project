@@ -23,9 +23,9 @@ defineEmits(["update:modelValue"]);
 
 <style scoped>
 .form-group {
-  @apply w-full flex flex-col;
+  @apply flex w-full flex-col;
 }
 .form-control {
-  @apply border p-2 border-gray-400 rounded;
+  @apply rounded border border-gray-400 p-2;
 }
 </style>

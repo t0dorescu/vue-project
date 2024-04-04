@@ -17,7 +17,7 @@ const doSomething = () => {
 </script>
 
 <template>
-  <div class="flex flex-col space-y-5 items-start">
+  <div class="flex flex-col items-start space-y-5">
     <!-- using $event special variable -->
     <button @click="warn('Form cannot be submitted yet.', $event)">Submit</button>
 

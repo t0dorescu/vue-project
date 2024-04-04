@@ -11,10 +11,10 @@ defineProps(["movie"]);
       height="88"
       class="flex-none rounded-md bg-slate-100"
     />
-    <div class="min-w-0 relative flex-auto">
-      <h2 class="font-semibold text-slate-900 truncate pr-20">{{ movie.title }}</h2>
-      <dl class="mt-2 flex flex-wrap text-sm leading-6 font-medium">
-        <div class="absolute top-0 right-0 flex items-center space-x-1">
+    <div class="relative min-w-0 flex-auto">
+      <h2 class="truncate pr-20 font-semibold text-slate-900">{{ movie.title }}</h2>
+      <dl class="mt-2 flex flex-wrap text-sm font-medium leading-6">
+        <div class="absolute right-0 top-0 flex items-center space-x-1">
           <dt class="text-sky-500">
             <span class="sr-only">Star rating</span>
             <svg
@@ -31,7 +31,7 @@ defineProps(["movie"]);
         </div>
         <div>
           <dt class="sr-only">Rating</dt>
-          <dd class="px-1.5 ring-1 ring-slate-200 rounded">{{ movie.rating }}</dd>
+          <dd class="rounded px-1.5 ring-1 ring-slate-200">{{ movie.rating }}</dd>
         </div>
         <div class="ml-2">
           <dt class="sr-only">Year</dt>
@@ -75,7 +75,7 @@ defineProps(["movie"]);
             {{ movie.runtime }}
           </dd>
         </div>
-        <div class="flex-none w-full mt-2 font-normal">
+        <div class="mt-2 w-full flex-none font-normal">
           <dt class="sr-only">Cast</dt>
           <dd class="text-slate-400">{{ movie.cast }}</dd>
         </div>

@@ -11,7 +11,7 @@ onMounted(() => {
   <ul class="mb-5">
     <li
       v-for="item in list"
-      class="inline mr-2"
+      class="mr-2 inline"
       ref="itemRefs"
     >
       {{ item }}

@@ -23,7 +23,7 @@ function formatDate(v) {
 </script>
 
 <template>
-  <h1 class="text-2xl my-5">Latest Vue Core Commits</h1>
+  <h1 class="my-5 text-2xl">Latest Vue Core Commits</h1>
   <template v-for="branch in branches">
     <input
       type="radio"

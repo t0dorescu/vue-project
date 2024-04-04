@@ -1,8 +1,8 @@
 <template>
-  <main class="py-6 px-4 sm:p-6 md:py-10 md:px-8">
-    <div class="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
+  <main class="px-4 py-6 sm:p-6 md:px-8 md:py-10">
+    <div class="mx-auto grid max-w-4xl grid-cols-1 lg:max-w-5xl lg:grid-cols-2 lg:gap-x-20">
       <div
-        class="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1"
+        class="relative col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 p-3 sm:row-start-2 sm:bg-none sm:p-0 lg:row-start-1"
       >
         <h1
           class="mt-1 text-lg font-semibold text-white sm:text-slate-900 md:text-2xl dark:sm:text-white"
@@ -10,38 +10,38 @@
           Beach House in Collingwood
         </h1>
         <p
-          class="text-sm leading-4 font-medium text-white sm:text-slate-500 dark:sm:text-slate-400"
+          class="text-sm font-medium leading-4 text-white sm:text-slate-500 dark:sm:text-slate-400"
         >
           Entire house
         </p>
       </div>
       <div
-        class="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0"
+        class="col-start-1 col-end-3 row-start-1 grid gap-4 sm:mb-6 sm:grid-cols-4 lg:col-start-2 lg:row-span-6 lg:row-end-6 lg:mb-0 lg:gap-6"
       >
         <img
           src="https://tailwindcss.com/_next/static/media/beach-house.9b9ee168.jpg"
           alt=""
-          class="w-full h-60 object-cover rounded-lg sm:h-52 sm:col-span-2 lg:col-span-full"
+          class="h-60 w-full rounded-lg object-cover sm:col-span-2 sm:h-52 lg:col-span-full"
           loading="lazy"
         />
         <img
           src="https://tailwindcss.com/_next/static/media/beach-house-interior-1.f151eb56.jpg"
           alt=""
-          class="hidden w-full h-52 object-cover rounded-lg sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32"
+          class="hidden h-52 w-full rounded-lg object-cover sm:col-span-2 sm:block md:col-span-1 lg:col-span-2 lg:row-start-2 lg:h-32"
           loading="lazy"
         />
         <img
           src="https://tailwindcss.com/_next/static/media/beach-house-interior-2.3672af98.jpg"
           alt=""
-          class="hidden w-full h-52 object-cover rounded-lg md:block lg:row-start-2 lg:col-span-2 lg:h-32"
+          class="hidden h-52 w-full rounded-lg object-cover md:block lg:col-span-2 lg:row-start-2 lg:h-32"
           loading="lazy"
         />
       </div>
       <dl
-        class="mt-4 text-xs font-medium flex items-center row-start-2 sm:mt-1 sm:row-start-3 md:mt-2.5 lg:row-start-2"
+        class="row-start-2 mt-4 flex items-center text-xs font-medium sm:row-start-3 sm:mt-1 md:mt-2.5 lg:row-start-2"
       >
         <dt class="sr-only">Reviews</dt>
-        <dd class="text-indigo-600 flex items-center dark:text-indigo-400">
+        <dd class="flex items-center text-indigo-600 dark:text-indigo-400">
           <svg
             width="24"
             height="24"
@@ -58,7 +58,7 @@
           </svg>
           <span>
             4.89
-            <span class="text-slate-400 font-normal">(128)</span>
+            <span class="font-normal text-slate-400">(128)</span>
           </span>
         </dd>
         <dt class="sr-only">Location</dt>
@@ -96,17 +96,17 @@
         </dd>
       </dl>
       <div
-        class="mt-4 col-start-1 row-start-3 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-3 lg:row-end-4"
+        class="col-start-1 row-start-3 mt-4 self-center sm:col-start-2 sm:row-span-2 sm:row-start-2 sm:mt-0 lg:col-start-1 lg:row-start-3 lg:row-end-4 lg:mt-6"
       >
         <button
           type="button"
-          class="bg-indigo-600 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg"
+          class="rounded-lg bg-indigo-600 px-3 py-2 text-sm font-medium leading-6 text-white"
         >
           Check availability
         </button>
       </div>
       <p
-        class="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-slate-400"
+        class="col-start-1 mt-4 text-sm leading-6 sm:col-span-2 lg:col-span-1 lg:row-start-4 lg:mt-6 dark:text-slate-400"
       >
         This sunny and spacious room is for those traveling light and looking for a comfy and cosy
         place to lay their head for a night or two. This beach house sits in a vibrant neighborhood

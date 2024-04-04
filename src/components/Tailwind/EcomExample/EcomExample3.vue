@@ -1,108 +1,108 @@
 <template>
-  <div class="flex font-serif shadow-md rounded-md mt-10 border-gray-200 border">
-    <div class="flex-none w-52 relative">
+  <div class="mt-10 flex rounded-md border border-gray-200 font-serif shadow-md">
+    <div class="relative w-52 flex-none">
       <img
         src="https://tailwindcss.com/_next/static/media/fancy-suit-jacket.edfeb695.jpg"
         alt=""
-        class="absolute inset-0 w-full h-full object-cover rounded-lg"
+        class="absolute inset-0 h-full w-full rounded-lg object-cover"
         loading="lazy"
       />
     </div>
     <form class="flex-auto p-6">
       <div class="flex flex-wrap items-baseline">
-        <h1 class="w-full flex-none mb-3 text-2xl leading-none text-slate-900">
+        <h1 class="mb-3 w-full flex-none text-2xl leading-none text-slate-900">
           DogTooth Style Jacket
         </h1>
         <div class="flex-auto text-lg font-medium text-slate-500">$350.00</div>
-        <div class="text-xs leading-6 font-medium uppercase text-slate-500">In stock</div>
+        <div class="text-xs font-medium uppercase leading-6 text-slate-500">In stock</div>
       </div>
-      <div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
-        <div class="space-x-1 flex text-sm font-medium">
+      <div class="mb-6 mt-4 flex items-baseline border-b border-slate-200 pb-6">
+        <div class="flex space-x-1 text-sm font-medium">
           <label>
             <input
-              class="sr-only peer"
+              class="peer sr-only"
               name="size"
               type="radio"
               value="xs"
               checked
             />
             <div
-              class="w-7 h-7 rounded-full flex items-center justify-center text-slate-500 peer-checked:bg-slate-100 peer-checked:text-slate-900"
+              class="flex h-7 w-7 items-center justify-center rounded-full text-slate-500 peer-checked:bg-slate-100 peer-checked:text-slate-900"
             >
               XS
             </div>
           </label>
           <label>
             <input
-              class="sr-only peer"
+              class="peer sr-only"
               name="size"
               type="radio"
               value="s"
             />
             <div
-              class="w-7 h-7 rounded-full flex items-center justify-center text-slate-500 peer-checked:bg-slate-100 peer-checked:text-slate-900"
+              class="flex h-7 w-7 items-center justify-center rounded-full text-slate-500 peer-checked:bg-slate-100 peer-checked:text-slate-900"
             >
               S
             </div>
           </label>
           <label>
             <input
-              class="sr-only peer"
+              class="peer sr-only"
               name="size"
               type="radio"
               value="m"
             />
             <div
-              class="w-7 h-7 rounded-full flex items-center justify-center text-slate-500 peer-checked:bg-slate-100 peer-checked:text-slate-900"
+              class="flex h-7 w-7 items-center justify-center rounded-full text-slate-500 peer-checked:bg-slate-100 peer-checked:text-slate-900"
             >
               M
             </div>
           </label>
           <label>
             <input
-              class="sr-only peer"
+              class="peer sr-only"
               name="size"
               type="radio"
               value="l"
             />
             <div
-              class="w-7 h-7 rounded-full flex items-center justify-center text-slate-500 peer-checked:bg-slate-100 peer-checked:text-slate-900"
+              class="flex h-7 w-7 items-center justify-center rounded-full text-slate-500 peer-checked:bg-slate-100 peer-checked:text-slate-900"
             >
               L
             </div>
           </label>
           <label>
             <input
-              class="sr-only peer"
+              class="peer sr-only"
               name="size"
               type="radio"
               value="xl"
             />
             <div
-              class="w-7 h-7 rounded-full flex items-center justify-center text-slate-500 peer-checked:bg-slate-100 peer-checked:text-slate-900"
+              class="flex h-7 w-7 items-center justify-center rounded-full text-slate-500 peer-checked:bg-slate-100 peer-checked:text-slate-900"
             >
               XL
             </div>
           </label>
         </div>
       </div>
-      <div class="flex space-x-4 mb-5 text-sm font-medium">
-        <div class="flex-auto flex space-x-4 pr-4">
+      <div class="mb-5 flex space-x-4 text-sm font-medium">
+        <div class="flex flex-auto space-x-4 pr-4">
           <button
-            class="flex-none w-1/2 h-12 uppercase font-medium tracking-wider bg-slate-900 text-white"
+            class="h-12 w-1/2 flex-none bg-slate-900 font-medium uppercase tracking-wider text-white"
             type="submit"
           >
             Buy now
           </button>
           <button
-            class="flex-none w-1/2 h-12 uppercase font-medium tracking-wider border border-slate-200 text-slate-900"
+            class="h-12 w-1/2 flex-none border border-slate-200 font-medium uppercase tracking-wider text-slate-900"
             type="button"
           >
             Add to bag
           </button>
         </div>
         <button
-          class="flex-none flex items-center justify-center w-12 h-12 text-slate-300 border border-slate-200"
+          class="flex h-12 w-12 flex-none items-center justify-center border border-slate-200 text-slate-300"
           type="button"
           aria-label="Like"
         >

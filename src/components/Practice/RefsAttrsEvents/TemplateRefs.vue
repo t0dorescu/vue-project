@@ -33,6 +33,6 @@ watchEffect(() => {
 <style scoped>
 button,
 input {
-  @apply border mx-2 p-2 rounded;
+  @apply mx-2 rounded border p-2;
 }
 </style>

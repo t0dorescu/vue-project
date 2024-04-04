@@ -10,7 +10,7 @@ function onMousemove(e) {
   <div
     @mousemove="onMousemove"
     :style="{ backgroundColor: `hsl(${x}, 80%, 50%)` }"
-    class="movearea p-3 rounded text-white"
+    class="movearea rounded p-3 text-white"
   >
     <p>Move your mouse across this div...</p>
     <p>x: {{ x }}</p>

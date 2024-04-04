@@ -5,7 +5,7 @@ provide("message", message);
 
 <template>
   <input
-    class="border p-3 mb-5"
+    class="mb-5 border p-3"
     v-model="message"
   />
   <ChildComponent />

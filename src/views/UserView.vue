@@ -20,13 +20,13 @@ onBeforeRouteUpdate(async (to, from) => {
     User {{ $route.params.id }}
   </div>
 
-  <nav class="my-3 flex gap-x-5 ml-5">
+  <nav class="my-3 ml-5 flex gap-x-5">
     <RouterLink :to="{ name: 'user-home' }">Go to user home</RouterLink>
     <RouterLink :to="{ name: 'user-profile' }">Go to profile</RouterLink>
     <RouterLink to="posts">Go to posts</RouterLink>
     <RouterLink to="random-something">Go to random</RouterLink>
   </nav>
-  <div class="border p-5 rounded ml-5">
+  <div class="ml-5 rounded border p-5">
     <RouterView />
   </div>
 </template>

@@ -1,15 +1,15 @@
 <template>
-  <div class="space-y-5 my-5">
-    <div class="p-3 bg-white shadow rounded-lg">
-      <h3 class="text-xs border-b mb-2 pb-1">font-sans</h3>
+  <div class="my-5 space-y-5">
+    <div class="rounded-lg bg-white p-3 shadow">
+      <h3 class="mb-2 border-b pb-1 text-xs">font-sans</h3>
       <p class="font-sans">The quick brown fox jumps over the lazy dog.</p>
     </div>
-    <div class="p-3 bg-white shadow rounded-lg">
-      <h3 class="text-xs border-b mb-2 pb-1">font-serif</h3>
+    <div class="rounded-lg bg-white p-3 shadow">
+      <h3 class="mb-2 border-b pb-1 text-xs">font-serif</h3>
       <p class="font-serif">The quick brown fox jumps over the lazy dog.</p>
     </div>
-    <div class="p-3 bg-white shadow rounded-lg">
-      <h3 class="text-xs border-b mb-2 pb-1">font-mono</h3>
+    <div class="rounded-lg bg-white p-3 shadow">
+      <h3 class="mb-2 border-b pb-1 text-xs">font-mono</h3>
       <p class="font-mono">The quick brown fox jumps over the lazy dog.</p>
     </div>
   </div>

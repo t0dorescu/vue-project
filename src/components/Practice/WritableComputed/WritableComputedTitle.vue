@@ -31,12 +31,12 @@ const classObject = computed(() => {
 
 <style scoped>
 .active {
-  @apply text-blue-900 font-bold;
+  @apply font-bold text-blue-900;
 }
 .error {
   @apply border-2 border-red-400;
 }
 .inactive {
-  @apply border-gray-300 border-2;
+  @apply border-2 border-gray-300;
 }
 </style>

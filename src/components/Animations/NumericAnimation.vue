@@ -22,7 +22,7 @@ onMounted(() => {
   <input
     ref="inputElement"
     v-model.number="number"
-    class="text-black p-2 border rounded"
+    class="rounded border p-2 text-black"
   />
   <p class="mt-3">{{ tweened.number.toFixed(0) }}</p>
 </template>

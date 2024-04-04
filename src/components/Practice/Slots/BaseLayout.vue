@@ -22,10 +22,10 @@ const count = ref(0);
 
 <style scoped>
 .container {
-  @apply border rounded p-5;
+  @apply rounded border p-5;
 }
 header {
-  @apply text-xl mb-3;
+  @apply mb-3 text-xl;
 }
 main {
   @apply py-3;

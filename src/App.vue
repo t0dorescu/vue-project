@@ -1,29 +1,24 @@
 <template>
+  <TransformsExample />
+  <!-- 
+    <GridExample />
+  <ApplyExample />
   <DarkModeExample />
-
-  <!-- <ApplyExample /> -->
-
-  <!-- <Movies
+  <Movies
     :movies="[
       {
         id: 1
       }
     ]"
-  /> -->
-
-  <!-- <HoverFocusExample /> -->
-  <!-- <ResponsiveExample /> -->
-
-  <!-- 
+  /> 
+  <HoverFocusExample />
+  <ResponsiveExample />
   <div class="tailwind-ecom-examples">
     <EcomExample1 />
     <EcomExample2 />
     <EcomExample3 />
     <EcomExample4 />
   </div> 
-  -->
-
-  <!--
   <div class="tailwind-simple-examples">
     <FigureExample />
     <SizingExample />
@@ -31,9 +26,6 @@
     <TypographyExample />
     <ShadowsExample />
   </div>
-  -->
-
-  <!--   
     <NumericAnimation />
     <StateDrivenAnimations />
     <ShakeAnimation />

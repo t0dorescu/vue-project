@@ -1,10 +1,10 @@
 <template>
-  <div class="grid grid-cols-2 gap-6 my-5">
-    <div class="shadow-sm bg-white p-3 rounded-lg">shadow-sm</div>
-    <div class="shadow bg-white p-3 rounded-lg">shadow</div>
-    <div class="shadow-md bg-white p-3 rounded-lg">shadow-md</div>
-    <div class="shadow-lg bg-white p-3 rounded-lg">shadow-lg</div>
-    <div class="shadow-xl bg-white p-3 rounded-lg">shadow-xl</div>
-    <div class="shadow-2xl bg-white p-3 rounded-lg">shadow-2xl</div>
+  <div class="my-5 grid grid-cols-2 gap-6">
+    <div class="rounded-lg bg-white p-3 shadow-sm">shadow-sm</div>
+    <div class="rounded-lg bg-white p-3 shadow">shadow</div>
+    <div class="rounded-lg bg-white p-3 shadow-md">shadow-md</div>
+    <div class="rounded-lg bg-white p-3 shadow-lg">shadow-lg</div>
+    <div class="rounded-lg bg-white p-3 shadow-xl">shadow-xl</div>
+    <div class="rounded-lg bg-white p-3 shadow-2xl">shadow-2xl</div>
   </div>
 </template>

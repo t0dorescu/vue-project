@@ -13,7 +13,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="p-5 border my-10">
+  <div class="my-10 border p-5">
     <p class="text-xl">Lifecycle Hooks</p>
   </div>
 </template>

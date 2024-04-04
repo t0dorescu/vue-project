@@ -21,18 +21,18 @@ const goNext = () => {
   <div class="my-3 flex gap-x-3">
     <button
       @click="goPrev"
-      class="border rounded p-2"
+      class="rounded border p-2"
     >
       Prev
     </button>
     <button
       @click="goNext"
-      class="border rounded p-2"
+      class="rounded border p-2"
     >
       Next
     </button>
   </div>
-  <nav class="flex gap-x-5 my-5">
+  <nav class="my-5 flex gap-x-5">
     <RouterLink :to="{ name: 'home' }">Go to Home</RouterLink>
     <RouterLink to="/about">Go to About</RouterLink>
     <RouterLink to="/users/tudor">Go to Users Tudor</RouterLink>
@@ -45,9 +45,9 @@ const goNext = () => {
 
 <style scoped>
 a {
-  @apply border rounded px-3 py-2 hover:bg-indigo-50 text-indigo-400 hover:text-indigo-600;
+  @apply rounded border px-3 py-2 text-indigo-400 hover:bg-indigo-50 hover:text-indigo-600;
 }
 .router-link-active {
-  @apply border-indigo-500 text-indigo-600 bg-indigo-100 hover:bg-indigo-100;
+  @apply border-indigo-500 bg-indigo-100 text-indigo-600 hover:bg-indigo-100;
 }
 </style>

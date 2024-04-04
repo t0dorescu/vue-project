@@ -13,7 +13,7 @@ function warnDisabled() {
   <div :class="{ shake: disabled }">
     <button
       @click="warnDisabled"
-      class="border p-2 rounded"
+      class="rounded border p-2"
     >
       Click me
     </button>

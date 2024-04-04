@@ -42,7 +42,7 @@ const nowMethod = () => Date.now();
     </div>
   </header>
   <main class="mb-10">
-    <div class="text-center mt-10">
+    <div class="mt-10 text-center">
       <BaseButton
         @click="onButtonClick"
         class="green"

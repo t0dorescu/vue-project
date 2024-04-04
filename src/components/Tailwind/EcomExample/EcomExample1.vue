@@ -1,10 +1,10 @@
 <template>
-  <div class="flex font-sans shadow-md rounded-md mt-10 border-gray-200 border">
-    <div class="flex-none w-48 relative">
+  <div class="mt-10 flex rounded-md border border-gray-200 font-sans shadow-md">
+    <div class="relative w-48 flex-none">
       <img
         src="https://tailwindcss.com/_next/static/media/classic-utility-jacket.82031370.jpg"
         alt=""
-        class="absolute inset-0 w-full h-full object-cover"
+        class="absolute inset-0 h-full w-full object-cover"
         loading="lazy"
       />
     </div>
@@ -12,95 +12,95 @@
       <div class="flex flex-wrap">
         <h1 class="flex-auto text-lg font-semibold text-slate-900">Utility Jacket</h1>
         <div class="text-lg font-semibold text-slate-500">$110.00</div>
-        <div class="w-full flex-none text-sm font-medium text-slate-700 mt-2">In stock</div>
+        <div class="mt-2 w-full flex-none text-sm font-medium text-slate-700">In stock</div>
       </div>
-      <div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
-        <div class="space-x-2 flex text-sm">
+      <div class="mb-6 mt-4 flex items-baseline border-b border-slate-200 pb-6">
+        <div class="flex space-x-2 text-sm">
           <label class="cursor-pointer">
             <input
-              class="sr-only peer"
+              class="peer sr-only"
               name="size"
               type="radio"
               value="xs"
               checked
             />
             <div
-              class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white"
+              class="flex h-9 w-9 items-center justify-center rounded-lg text-slate-700 peer-checked:bg-slate-900 peer-checked:font-semibold peer-checked:text-white"
             >
               XS
             </div>
           </label>
           <label class="cursor-pointer">
             <input
-              class="sr-only peer"
+              class="peer sr-only"
               name="size"
               type="radio"
               value="s"
             />
             <div
-              class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white"
+              class="flex h-9 w-9 items-center justify-center rounded-lg text-slate-700 peer-checked:bg-slate-900 peer-checked:font-semibold peer-checked:text-white"
             >
               S
             </div>
           </label>
           <label class="cursor-pointer">
             <input
-              class="sr-only peer"
+              class="peer sr-only"
               name="size"
               type="radio"
               value="m"
             />
             <div
-              class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white"
+              class="flex h-9 w-9 items-center justify-center rounded-lg text-slate-700 peer-checked:bg-slate-900 peer-checked:font-semibold peer-checked:text-white"
             >
               M
             </div>
           </label>
           <label class="cursor-pointer">
             <input
-              class="sr-only peer"
+              class="peer sr-only"
               name="size"
               type="radio"
               value="l"
             />
             <div
-              class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white"
+              class="flex h-9 w-9 items-center justify-center rounded-lg text-slate-700 peer-checked:bg-slate-900 peer-checked:font-semibold peer-checked:text-white"
             >
               L
             </div>
           </label>
           <label class="cursor-pointer">
             <input
-              class="sr-only peer"
+              class="peer sr-only"
               name="size"
               type="radio"
               value="xl"
             />
             <div
-              class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white"
+              class="flex h-9 w-9 items-center justify-center rounded-lg text-slate-700 peer-checked:bg-slate-900 peer-checked:font-semibold peer-checked:text-white"
             >
               XL
             </div>
           </label>
         </div>
       </div>
-      <div class="flex space-x-4 mb-6 text-sm font-medium">
-        <div class="flex-auto flex space-x-4">
+      <div class="mb-6 flex space-x-4 text-sm font-medium">
+        <div class="flex flex-auto space-x-4">
           <button
-            class="h-10 px-6 font-semibold rounded-md bg-black text-white"
+            class="h-10 rounded-md bg-black px-6 font-semibold text-white"
             type="submit"
           >
             Buy now
           </button>
           <button
-            class="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900"
+            class="h-10 rounded-md border border-slate-200 px-6 font-semibold text-slate-900"
             type="button"
           >
             Add to bag
           </button>
         </div>
         <button
-          class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200"
+          class="flex h-9 w-9 flex-none items-center justify-center rounded-md border border-slate-200 text-slate-300"
           type="button"
           aria-label="Like"
         >

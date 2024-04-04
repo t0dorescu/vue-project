@@ -1,13 +1,13 @@
 <template>
-  <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+  <figure class="rounded-xl bg-slate-100 p-8 md:flex md:p-0 dark:bg-slate-800">
     <img
-      class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+      class="mx-auto h-24 w-24 rounded-full md:h-auto md:w-48 md:rounded-none"
       src="https://tailwindcss.com/_next/static/media/sarah-dayan.de9b3815.jpg"
       alt=""
       width="384"
       height="512"
     />
-    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+    <div class="space-y-4 pt-6 text-center md:p-8 md:text-left">
       <blockquote>
         <p class="text-lg font-medium">
           “Tailwind CSS is the only framework that I've seen scale on large teams. It’s easy to

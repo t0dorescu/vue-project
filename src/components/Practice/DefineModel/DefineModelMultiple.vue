@@ -13,7 +13,7 @@ console.log(modifiers);
 </script>
 
 <template>
-  <div class="mt-2 text-md">
+  <div class="text-md mt-2">
     <h1 @click="title += '.'">{{ title }}</h1>
     <p @click="content += '.'">{{ content }}</p>
   </div>

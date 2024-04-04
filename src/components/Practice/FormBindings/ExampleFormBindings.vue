@@ -8,7 +8,7 @@ const multiSelected = ref(["A"]);
 </script>
 
 <template>
-  <div class="flex flex-col w-full text-left items-start gap-3">
+  <div class="flex w-full flex-col items-start gap-3 text-left">
     <h2>Text Input</h2>
     <input v-model="text" />
     {{ text }}
@@ -104,10 +104,10 @@ input,
 textarea,
 select,
 option {
-  @apply p-3 border rounded;
+  @apply rounded border p-3;
 }
 .vertical {
-  @apply flex flex-col gap-5 m-5 items-start justify-start;
+  @apply m-5 flex flex-col items-start justify-start gap-5;
 }
 .checkbox {
   @apply flex gap-x-5;

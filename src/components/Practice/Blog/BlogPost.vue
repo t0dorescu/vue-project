@@ -12,7 +12,7 @@ defineEmits(["enlarge-text"]);
 
 <style scoped>
 .blog-post {
-  @apply my-3 p-3 border rounded;
+  @apply my-3 rounded border p-3;
 }
 .blog-post h1 {
   @apply text-xl;

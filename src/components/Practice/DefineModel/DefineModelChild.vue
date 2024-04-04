@@ -9,6 +9,6 @@ const model = defineModel();
 
 <style scoped>
 div {
-  @apply border p-3 rounded my-3 cursor-pointer select-none;
+  @apply my-3 cursor-pointer select-none rounded border p-3;
 }
 </style>

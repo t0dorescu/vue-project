@@ -62,7 +62,7 @@ const even = (numbers) => {
 </script>
 
 <template>
-  <div class="flex flex-col space-y-5 mb-5">
+  <div class="mb-5 flex flex-col space-y-5">
     <ul>
       <li v-for="(value, key, index) in personObj">
         <span>{{ `${index}.${key}: ${value}` }}</span>
@@ -98,7 +98,7 @@ const even = (numbers) => {
       <ul>
         <li
           v-for="n in evenNumbers"
-          class="px-1 inline"
+          class="inline px-1"
         >
           <span>{{ n }}</span>
         </li>

@@ -10,7 +10,7 @@ const publishedBooksMessage = computed(() => {
 </script>
 
 <template>
-  <div class="text-center mb-10">
+  <div class="mb-10 text-center">
     <p>Has published books:</p>
     <span>{{ publishedBooksMessage }}</span>
   </div>

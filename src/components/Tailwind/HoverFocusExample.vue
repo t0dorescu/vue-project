@@ -1,11 +1,11 @@
 <template>
   <section>
-    <header class="bg-white space-y-4 p-4 sm:px-8 sm:py-6 lg:p-4 xl:px-8 xl:py-6">
+    <header class="space-y-4 bg-white p-4 sm:px-8 sm:py-6 lg:p-4 xl:px-8 xl:py-6">
       <div class="flex items-center justify-between">
         <h2 class="font-semibold text-slate-900">Projects</h2>
         <a
           href="/new"
-          class="hover:bg-blue-400 group flex items-center rounded-md bg-blue-500 text-white text-sm font-medium pl-2 pr-3 py-2 shadow-sm"
+          class="group flex items-center rounded-md bg-blue-500 py-2 pl-2 pr-3 text-sm font-medium text-white shadow-sm hover:bg-blue-400"
         >
           <svg
             width="20"
@@ -26,7 +26,7 @@
           width="20"
           height="20"
           fill="currentColor"
-          class="absolute left-3 top-1/2 -mt-2.5 text-slate-400 pointer-events-none group-focus-within:text-blue-500"
+          class="pointer-events-none absolute left-3 top-1/2 -mt-2.5 text-slate-400 group-focus-within:text-blue-500"
           aria-hidden="true"
         >
           <path
@@ -36,7 +36,7 @@
           />
         </svg>
         <input
-          class="focus:ring-2 focus:ring-blue-500 focus:outline-none appearance-none w-full text-sm leading-6 text-slate-900 placeholder-slate-400 rounded-md py-2 pl-10 ring-1 ring-slate-200 shadow-sm"
+          class="w-full appearance-none rounded-md py-2 pl-10 text-sm leading-6 text-slate-900 placeholder-slate-400 shadow-sm ring-1 ring-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
           type="text"
           aria-label="Filter projects"
           placeholder="Filter projects..."
@@ -44,17 +44,17 @@
       </form>
     </header>
     <ul
-      class="bg-slate-50 p-4 sm:px-8 sm:pt-6 sm:pb-8 lg:p-4 xl:px-8 xl:pt-6 xl:pb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-4 text-sm leading-6"
+      class="grid grid-cols-1 gap-4 bg-slate-50 p-4 text-sm leading-6 sm:grid-cols-2 sm:px-8 sm:pb-8 sm:pt-6 lg:grid-cols-1 lg:p-4 xl:grid-cols-2 xl:px-8 xl:pb-8 xl:pt-6"
     >
       <li x-for="project in projects">
         <a
           href="#project.url"
-          class="hover:bg-blue-500 hover:ring-blue-500 hover:shadow-md group rounded-md p-3 bg-white ring-1 ring-slate-200 shadow-sm"
+          class="group rounded-md bg-white p-3 shadow-sm ring-1 ring-slate-200 hover:bg-blue-500 hover:shadow-md hover:ring-blue-500"
         >
-          <dl class="grid sm:block lg:grid xl:block grid-cols-2 grid-rows-2 items-center">
+          <dl class="grid grid-cols-2 grid-rows-2 items-center sm:block lg:grid xl:block">
             <div>
               <dt class="sr-only">Title</dt>
-              <dd class="group-hover:text-white font-semibold text-slate-900">Api Integration</dd>
+              <dd class="font-semibold text-slate-900 group-hover:text-white">Api Integration</dd>
             </div>
             <div>
               <dt class="sr-only">Category</dt>
@@ -64,12 +64,12 @@
               <dt class="sr-only">Users</dt>
               <dd
                 x-for="user in project.users"
-                class="flex justify-end sm:justify-start lg:justify-end xl:justify-start -space-x-1.5"
+                class="flex justify-end -space-x-1.5 sm:justify-start lg:justify-end xl:justify-start"
               >
                 <img
                   src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=facearea&facepad=2&w=48&h=48&q=80"
                   alt=""
-                  class="w-6 h-6 rounded-full bg-slate-100 ring-2 ring-white"
+                  class="h-6 w-6 rounded-full bg-slate-100 ring-2 ring-white"
                   loading="lazy"
                 />
               </dd>
@@ -80,10 +80,10 @@
       <li class="flex">
         <a
           href="/new"
-          class="hover:border-blue-500 hover:border-solid hover:bg-white hover:text-blue-500 group w-full flex flex-col items-center justify-center rounded-md border-2 border-dashed border-slate-300 text-sm leading-6 text-slate-900 font-medium py-3"
+          class="group flex w-full flex-col items-center justify-center rounded-md border-2 border-dashed border-slate-300 py-3 text-sm font-medium leading-6 text-slate-900 hover:border-solid hover:border-blue-500 hover:bg-white hover:text-blue-500"
         >
           <svg
-            class="group-hover:text-blue-500 mb-1 text-slate-400"
+            class="mb-1 text-slate-400 group-hover:text-blue-500"
             width="20"
             height="20"
             fill="currentColor"

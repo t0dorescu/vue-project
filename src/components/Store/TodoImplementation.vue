@@ -123,10 +123,10 @@ todosStore.$subscribe((mutation, state) => {
 <style scoped>
 button,
 input {
-  @apply border p-2 rounded m-1 cursor-pointer;
+  @apply m-1 cursor-pointer rounded border p-2;
 }
 label {
-  @apply cursor-pointer border rounded p-2 m-1;
+  @apply m-1 cursor-pointer rounded border p-2;
 }
 .active {
   @apply bg-gray-100;

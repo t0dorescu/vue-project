@@ -62,12 +62,12 @@ watchEffect(async () => {
 </script>
 
 <template>
-  <div class="flex items-center gap-x-2 mb-5">
+  <div class="mb-5 flex items-center gap-x-2">
     <label for="todoId">Todo ID</label>
     <input
       id="todoId"
       type="number"
-      class="border rounded p-2"
+      class="rounded border p-2"
       v-model.number="todoId"
     />
     <button @click="todoId--">Prev</button>
@@ -83,7 +83,7 @@ watchEffect(async () => {
     <input
       v-model="question"
       :disabled="isLoading"
-      class="border rounded p-2"
+      class="rounded border p-2"
     />
   </p>
   <p>{{ answer }}</p>
@@ -92,6 +92,6 @@ watchEffect(async () => {
 
 <style scoped>
 button {
-  @apply bg-blue-500 text-white rounded p-2;
+  @apply rounded bg-blue-500 p-2 text-white;
 }
 </style>

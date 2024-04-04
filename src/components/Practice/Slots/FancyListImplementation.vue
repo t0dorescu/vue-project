@@ -14,6 +14,6 @@
 
 <style scoped>
 .item {
-  @apply my-5 border p-5 rounded;
+  @apply my-5 rounded border p-5;
 }
 </style>

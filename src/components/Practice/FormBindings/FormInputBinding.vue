@@ -249,10 +249,10 @@ input,
 textarea,
 select,
 option {
-  @apply p-3 border rounded w-full;
+  @apply w-full rounded border p-3;
 }
 .vertical {
-  @apply flex flex-col gap-5 m-5 items-start justify-start;
+  @apply m-5 flex flex-col items-start justify-start gap-5;
 }
 .checkbox {
   @apply flex gap-x-5;
