@@ -1,36 +1,47 @@
-@import "./base.css";
-@import "./tailwind.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
-}
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+@layer base {
+  :root {
+    --gray-small: #efefef;
   }
 }
 
-@media (min-width: 1024px) {
+@layer components {
   body {
-    display: flex;
-    place-items: center;
+    @apply bg-gray-100 dark:bg-gray-900;
+  }
+  #app {
+    @apply mx-auto max-w-[1280px] p-[2rem] font-normal;
+  }
+  .btn-primary {
+    @apply rounded-full bg-violet-500 px-5 py-2 font-semibold text-white shadow-md hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75;
+  }
+}
+
+@layer utilities {
+  .content-auto {
+    content-visibility: auto;
   }
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+  /* dark:group-hover:opacity-100 */
+  .dark .group:hover .dark\:group-hover\:opacity-100 {
+    opacity: 1;
+  }
+
+  /* group-hover:dark:opacity-100 */
+  .group:hover .dark .group-hover\:dark\:opacity-100 {
+    opacity: 1;
+  }
+
+  /* prose-headings:hover:underline */
+  .prose-headings\:hover\:underline:hover :is(:where(h1, h2, h3, h4, th)) {
+    text-decoration: underline;
+  }
+
+  /* hover:prose-headings:underline */
+  .hover\:prose-headings\:underline :is(:where(h1, h2, h3, h4, th)):hover {
+    text-decoration: underline;
   }
 }
