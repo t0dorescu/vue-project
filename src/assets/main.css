@@ -6,17 +6,38 @@
   :root {
     --gray-small: #efefef;
   }
-}
-
-@layer components {
   body {
     @apply bg-gray-100 dark:bg-gray-900;
   }
   #app {
     @apply mx-auto max-w-[1280px] p-[2rem] font-normal;
   }
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+}
+
+@layer components {
+  .card {
+    background-color: theme("colors.white");
+    border-radius: theme("borderRadius.lg");
+    padding: theme("spacing.6");
+    box-shadow: theme("boxShadow.xl");
+  }
   .btn-primary {
     @apply rounded-full bg-violet-500 px-5 py-2 font-semibold text-white shadow-md hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75;
+  }
+  .select2-dropdown {
+    @apply rounded-b-lg shadow-md;
+  }
+  .select2-search {
+    @apply rounded border border-gray-300;
+  }
+  .select2-results__group {
+    @apply text-lg font-bold text-gray-900;
   }
 }
 
